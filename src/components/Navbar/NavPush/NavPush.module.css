@@ -1,0 +1,8 @@
+.NavPush {
+  flex: 1 1 0;
+}
+@media (max-width: 840px) {
+  .NavPush {
+    display: none;
+  }
+}

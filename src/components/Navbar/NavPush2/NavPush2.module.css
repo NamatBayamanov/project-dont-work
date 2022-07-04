@@ -1,0 +1,9 @@
+.NavPush2 {
+  flex: 1 1 0;
+  font-size: 20px;
+}
+@media(max-width: 840px) {
+  .NavPush2 {
+    justify-content: flex-start;
+  }
+}

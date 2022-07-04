@@ -1,0 +1,8 @@
+.NavItem {
+
+}
+@media(max-width: 840px) {
+  .NavItem {
+    display: none;
+  }
+}
