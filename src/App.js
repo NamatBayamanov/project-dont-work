@@ -1,11 +1,11 @@
 import Layout from "./components/Layout/Layout";
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
       <Layout/>
     </div>
   );
