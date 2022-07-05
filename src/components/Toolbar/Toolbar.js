@@ -6,6 +6,31 @@ function Toolbar({toggle}) {
   return ( 
     <div className={classes.Toolbar}>
       <Navbar toggle={toggle}/>
+      
+{/* 
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/> */}
     </div>
   );
 }
