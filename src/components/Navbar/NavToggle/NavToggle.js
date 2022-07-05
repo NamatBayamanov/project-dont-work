@@ -1,10 +1,10 @@
 import { FaAlignJustify } from "react-icons/fa";
 import classes from "./NavToggle.module.css";
 
-function NavToggle() {
+function NavToggle({toggle}) {
   
   return ( 
-    <div className={classes.NavToggle}>
+    <div className={classes.NavToggle} onClick={toggle}>
       <span>
         <FaAlignJustify/>
       </span>

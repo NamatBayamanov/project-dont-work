@@ -1,9 +1,9 @@
 import classes from "./Navbar.module.css";
-import NavItem from "./NavItem/NavItem.NavItem";
+import NavItem from "./NavItem/NavItem";
 import NavPush from "./NavPush/NavPush";
 import NavPush2 from "./NavPush2/NavPush2";
 import NavToggle from "./NavToggle/NavToggle";
-function Navbar() {
+function Navbar({toggle}) {
   return ( 
     <div className={classes.Navbar}>
       <div className={classes.background}>
@@ -11,33 +11,33 @@ function Navbar() {
           <div className={classes.content}>
             <ul className={classes.list}>
               
-              <NavItem>
+              <NavItem url="/lane-sale" active>
                 Lane Sale
               </NavItem>
-              <NavItem>
+              <NavItem url="/communication">
                 Communication
               </NavItem>
-              <NavPush >
+              <NavPush url="/build-your-own">
               Build your own
               </NavPush>
             
               
-              <NavPush2>
+              <NavPush2 active url="/Pax.World">
                 Pax.World
               </NavPush2>
 
-              <NavItem>
+              <NavItem url="/governance">
                 Governance
-              </NavItem>
-              <NavItem>
+              </NavItem >
+              <NavItem url="/roadmap">
               Roadmap
               </NavItem>
-              <NavItem>
+              <NavItem url="/partners">
               Partners
 
               </NavItem>
 
-              <NavToggle/>
+              <NavToggle toggle={toggle}/>
               
             </ul>
           </div>

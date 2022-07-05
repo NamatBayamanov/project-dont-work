@@ -3,6 +3,14 @@
   font-size: 20px;
   padding: .5rem;
 }
+
+.NavPush2 a {
+  border-bottom: 2px solid transparent;
+}
+
+a.active {
+  border-bottom-color: white;
+}
 @media(max-width: 840px) {
   .NavPush2 {
     justify-content: flex-start;

@@ -1,9 +1,9 @@
 import classes from "./NavPush2.module.css";
-import { Link } from "react-router-dom";
-function NavPush2({children}) {
+import { Link, useMatch } from "react-router-dom";
+function NavPush2({children, url}) {
   return (
     <li className={classes.NavPush2}>
-      <Link to="/">{children}</Link>
+      <Link className={useMatch(url) ? classes.active : null} to={url}>{children}</Link>
     </li>
   );
 }

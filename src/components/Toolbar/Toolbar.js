@@ -1,10 +1,11 @@
 import Navbar from "../Navbar/Navbar";
+// import NavToggle from "../Navbar/NavToggle/NavToggle";
 import classes from "./Toolbar.module.css";
 
-function Toolbar() {
+function Toolbar({toggle}) {
   return ( 
     <div className={classes.Toolbar}>
-      <Navbar/>
+      <Navbar toggle={toggle}/>
     </div>
   );
 }

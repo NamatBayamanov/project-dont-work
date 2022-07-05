@@ -1,0 +1,84 @@
+.Drawer {
+
+}
+
+.background {
+  /* transform: translate(0); */
+}
+
+.content {
+  /* transform: translateX(0); */
+}
+
+
+
+
+.content .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.192);
+}
+.backdrop {
+  display: none;
+}
+.backdrop.none {
+  transition: all .3s;
+  display: block;
+}
+.menu {
+  transform: translateY(-1000px);
+  transition: all .3s;
+}
+.menu.open {
+  transform: translateY(0);
+  transition: all .3s;
+}
+.content .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* border: 1px solid red; */
+  background-color: violet;
+/* 
+  width: 250px; */
+}
+.menu .list {
+  list-style-type: none;
+
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  /* border: 2px solid blue; */
+
+  background-color: violet;
+
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.list li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem 2rem;
+  font-size: 20px;
+}
+
+@media(min-width: 840px) {
+  .Drawer {
+    display: none;
+  }
+}

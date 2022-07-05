@@ -1,9 +1,15 @@
 .NavItem {
 
 }
+.NavItem a {
+  border-bottom: 2px solid transparent;
+}
+a.active {
+  border-bottom-color: white;
+}
 @media(max-width: 840px) {
   .NavItem {
     display: none;
   }
-  
+
 }
