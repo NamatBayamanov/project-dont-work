@@ -1,0 +1,11 @@
+.NavToggle  {
+  /* background-color: red; */
+  font-size: 26px;
+  padding: 0 .5rem;
+  padding-top: .4rem;
+}
+@media(min-width: 840px) {
+  .NavToggle {
+    display: none;
+  }
+}

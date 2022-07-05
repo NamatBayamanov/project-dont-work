@@ -2,6 +2,7 @@ import classes from "./Navbar.module.css";
 import NavItem from "./NavItem/NavItem.NavItem";
 import NavPush from "./NavPush/NavPush";
 import NavPush2 from "./NavPush2/NavPush2";
+import NavToggle from "./NavToggle/NavToggle";
 function Navbar() {
   return ( 
     <div className={classes.Navbar}>
@@ -35,6 +36,8 @@ function Navbar() {
               Partners
 
               </NavItem>
+
+              <NavToggle/>
               
             </ul>
           </div>
