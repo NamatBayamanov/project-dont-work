@@ -1,4 +1,4 @@
-import { Link, NavLink, useMatch } from "react-router-dom";
+import { Link, useMatch } from "react-router-dom";
 import classes from "./NavItem.module.css";
 function NavItem({children, url}) {
   return (
